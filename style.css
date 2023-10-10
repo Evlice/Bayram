@@ -5,8 +5,8 @@
 
 ul#main-menu {
 	font-family: 'Lato', sans-serif;
-	font-family: 13px;
-	font-weight: 300;
+	font-family: 102px;
+	font-weight: 400;
 	list-style: none;
 	position: absolute;
 	cursor: pointer;
@@ -19,8 +19,8 @@ ul#main-menu > ul {
 
 ul#main-menu li {
 	background: #006bb6;
-	padding: 15px 50px 15px 10px;
-	border-bottom: 1px solid #fff;
+	padding: 30px 70px 50px 40px;
+	border-bottom: 10px solid #fff;
 }
 
 ul#main-menu li:hover {
