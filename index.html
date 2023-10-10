@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Dropdown Menu</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body onload="menuInit();">
+	<nav id="navbar">
+		<ul id="main-menu">
+			<li><a href="tv.html" target="_blank"><i class="fa fa-home"></i>Bayram Tv</a></li>
+			<li><a href="TurisYeni/index.html" target="_blank"><i class="fa fa-list-alt"></i>Android Bayram</a></li>
+			<li id="dropdown-item"><a href="#"><i class="fa fa-coffee"></i>Test</a></li>
+				<ul id="submenu" class="hide-submenu">
+					<li>AngularJS</li>
+					<li>JavaScript</li>
+					<li>HTML5</li>
+					<li>CSS3</li>
+				</ul>
+			<li><a href="#" target="_blank"><i class="fa fa-quote-left"></i>Test</a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-user"></i>Contact</a></li>
+		</ul><!-- main-menu -->
+	</nav><!-- navbar -->
+
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
