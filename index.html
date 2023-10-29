@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Dropdown Menu</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'><link rel="stylesheet" href="./style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using javascript - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<body onload="menuInit();">
-	<nav id="navbar">
-		<ul id="main-menu">
-			<li><a href="tv.html" target="_blank"><i class="fa fa-home"></i>Bayram Tv</a></li>
-			<li><a href="TurisYeni/index.html" target="_blank"><i class="fa fa-list-alt"></i>Android Bayram</a></li>
-			<li id="dropdown-item"><a href="#"><i class="fa fa-coffee"></i>Test</a></li>
-				<ul id="submenu" class="hide-submenu">
-					<li>Bayram Tv</li>
-					<li>Bayram Tv</li>
-					<li>Bayram Tv</li>
-					<li>Bayram Tv</li>
-				</ul>
-			<li><a href="#" target="_blank"><i class="fa fa-quote-left"></i>Test</a></li>
-			<li><a href="#" target="_blank"><i class="fa fa-user"></i>Contact</a></li>
-		</ul><!-- main-menu -->
-	</nav><!-- navbar -->
 
-</body>
-<!-- partial -->
-  <script  src="./script.js"></script>
+<div class="container">
+  <div class="calculator">
+    <form>
+      <div class="display">
+        <input type="text" name="display">
+      </div>
+      <div>
+        <input type="button" value="AC" onclick="display.value = '' " class="operator">
+        <input type="button" value="DE" onclick="display.value =  display.value.toString().slice(0,-1)" class="operator">
+        <input type="button" value="." onclick="display.value += '.' " class="operator">
+        <input type="button" value="/" onclick="display.value += '/' " class="operator">
+      </div>
+      <div>
+        <input type="button" value="7" onclick="display.value += '7' ">
+        <input type="button" value="8" onclick="display.value += '8' ">
+        <input type="button" value="9" onclick="display.value += '9' ">
+        <input type="button" value="*" onclick="display.value += '*' " class="operator">
+      </div>
+      <div>
+        <input type="button" value="4" onclick="display.value += '4' ">
+        <input type="button" value="5" onclick="display.value += '5' ">
+        <input type="button" value="6" onclick="display.value += '6' ">
+        <input type="button" value="-" onclick="display.value += '-' " class="operator">
+      </div>
+      <div>
+        <input type="button" value="1" onclick="display.value += '1' ">
+        <input type="button" value="2" onclick="display.value += '2' ">
+        <input type="button" value="3" onclick="display.value += '3' ">
+        <input type="button" value="+" onclick="display.value += '+' " class="operator">
+      </div>
+      <div>
+        <input type="button" value="00" onclick="display.value += '00' ">
+        <input type="button" value="0" onclick="display.value += '0' ">
+        <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
+       
+      </div>
+    </form>
+  </div>
+</div>
+
 
 </body>
 </html>
