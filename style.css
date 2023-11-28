@@ -45,11 +45,11 @@ h1 {
 
 /* start da css for da buttons */
 .btn {
-  border-radius: 5px;
-  padding: 15px 25px;
-  font-size: 22px;
+  border-radius: 10px;
+  padding: 25px 35px;
+  font-size: 32px;
   text-decoration: none;
-  margin: 20px;
+  margin: 30px;
   color: #fff;
   position: relative;
   display: inline-block;
